@@ -1,0 +1,9 @@
+name: conda-work-tests
+
+dependencies:
+  - python=3.6.6
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - bokeh
