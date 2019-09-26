@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  minio:
+    image: "minio/minio"
+    command: "server /var/lib/minio/data"
+    environment:
+      MINIO_ACCESS_KEY: carta
+      MINIO_SECRET_KEY: password
+    ports:
+      - "9000:9000"
+    volumes:
+      - "/var/lib/minio/data"
+
+  cartadb:
+    image: postgres:11.5
+    environment:
+      POSTGRES_USER: carta
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
