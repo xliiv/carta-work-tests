@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python setup.py develop
+touch environment-installed.txt
