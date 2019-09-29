@@ -11,3 +11,4 @@ dependencies:
   - sqlalchemy
   - sqlalchemy-utils
   - psycopg2
+  - postgresql
