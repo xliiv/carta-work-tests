@@ -5,7 +5,7 @@ the average of a given column in a CSV file. For instance, given
 the CSV file data.csv in this repository:
 
 ```bash
-curl -X POST -F 'data=@data.csv' -F 'column=number'
+curl -X POST -F 'data=@data.csv' -F 'column=number' http://localhost:8080
 ```
 
 should return
@@ -35,7 +35,7 @@ cd yourcode
 mvn spring-boot:run  # or whatever run command you give us here to use
 
 # In another terminal
-curl -X POST -F 'data=@data.csv' -F 'column=number'
+curl -X POST -F 'data=@data.csv' -F 'column=number' http://localhost:8080
 ```
 
 And will look to make sure that the answer is the average of our
